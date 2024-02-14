@@ -1,14 +1,23 @@
 import Navbar from '../components/Navbar'
 import { useEffect, useState } from 'react'
 import UserItem from '../components/users/UserItem'
+import SearchForm from '../components/users/SerchForm'
 
 export default function PruebaPage () {
   const [users, setUsers] = useState([])
+  const [filteredUsers, setFilteredUsers] = useState([])
+  const handleSearchSubmit = (value) => {
+    const newFilterUsers = users.filter((user) =>
+      `${user.name}${user.username}`.toLowerCase().includes(value.toLowerCase())
+    )
+    setFilteredUsers(newFilterUsers)
+  }
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((res) => res.json())
       .then((newUsers) => {
         setUsers(newUsers)
+        setFilteredUsers(newUsers)
       })
       .catch(() => {
         console.error('Ha ocurrido un error')
@@ -19,23 +28,14 @@ export default function PruebaPage () {
       <Navbar />
       <main className="container">
         <h1>Prueba</h1>
-        <form className="row mb-5">
-          <div className="col-11">
-            <input
-              type="text"
-              className="form-control form-control-lg"
-              id="exampleFormControlInput1"
-              placeholder="Buscar por nombre o usuario"
-            />
-          </div>
-          <div className="col-1 d-grid">
-            <button className="btn btn-primary btn-lg" type="submit">
-              Buscar
-            </button>
-          </div>
-        </form>
-        {users.map((user) => (
-          <UserItem key={user.id} email={user.email} username={user.username} name={user.name}/>
+        <SearchForm onSubmit={handleSearchSubmit} />
+        {filteredUsers.map((user) => (
+          <UserItem
+            key={user.id}
+            email={user.email}
+            username={user.username}
+            name={user.name}
+          />
         ))}
       </main>
     </>
