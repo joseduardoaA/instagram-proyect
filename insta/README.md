@@ -55,3 +55,7 @@ https://reactrouter.com/en/main/start/faq
 
 API a consumir  
 https://jsonplaceholder.typicode.com/
+
+Generar la URL -- Ejemplo en el UserItem.jsx
+https://reactrouter.com/en/main/hooks/use-params
+Archivo a trabajar albumes.jsx
