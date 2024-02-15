@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import UserItem from '../components/users/UserItem'
 import SearchForm from '../components/users/SerchForm'
 
-export default function PruebaPage () {
+export default function UsuariosPage () {
   const [users, setUsers] = useState([])
   const [filteredUsers, setFilteredUsers] = useState([])
   const handleSearchSubmit = (value) => {
@@ -27,7 +27,6 @@ export default function PruebaPage () {
     <>
       <Navbar />
       <main className="container">
-        <h1>Prueba</h1>
         <SearchForm onSubmit={handleSearchSubmit} />
         {filteredUsers.map((user) => (
           <UserItem
@@ -35,6 +34,7 @@ export default function PruebaPage () {
             email={user.email}
             username={user.username}
             name={user.name}
+            userId={user.id}
           />
         ))}
       </main>

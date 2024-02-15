@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 import md5 from 'md5'
+import { useNavigate } from 'react-router-dom'
 
 export default function UserItem (props) {
+  const navigate = useNavigate()
   const [isHover, setIsHover] = useState(false)
-
+  function useLogoutTimer () {
+    navigate(`/albumes/${props.userId}`)
+  }
   return (
     <div
+      onClick={useLogoutTimer}
       className={`mb-3 card ${isHover ? 'text-bg-primary' : ''}`}
       role="button"
       onMouseEnter={() => {
@@ -37,5 +42,6 @@ export default function UserItem (props) {
 UserItem.propTypes = {
   email: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired
+  username: PropTypes.string.isRequired,
+  userId: PropTypes.number.isRequired
 }
