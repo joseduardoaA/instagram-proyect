@@ -59,3 +59,9 @@ https://jsonplaceholder.typicode.com/
 Generar la URL -- Ejemplo en el UserItem.jsx
 https://reactrouter.com/en/main/hooks/use-params
 Archivo a trabajar albumes.jsx
+
+Colocar la imagen y el texto
+[text](https://getbootstrap.com/docs/5.3/components/card/)
+
+Ciclo de vida de un componente
+https://platzi.com/blog/ciclo-de-vida-de-un-componente-de-reactjs/#:~:text=Ciclo%20de%20vida%20de%20un%20componente%20de%20React.js,Actualizaci%C3%B3n%20...%204%20Desmontado%20...%205%20Conclusi%C3%B3n%20
