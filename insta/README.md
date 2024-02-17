@@ -65,3 +65,9 @@ Colocar la imagen y el texto
 
 Ciclo de vida de un componente
 https://platzi.com/blog/ciclo-de-vida-de-un-componente-de-reactjs/#:~:text=Ciclo%20de%20vida%20de%20un%20componente%20de%20React.js,Actualizaci%C3%B3n%20...%204%20Desmontado%20...%205%20Conclusi%C3%B3n%20
+
+[text](https://es.react.dev/reference/react/useEffect)
+
+useState devuelve un array con exactamente dos valores:
+El estado actual. Durante el primer renderizado, coincidirá con el initialState que hayas pasado.
+La función set que te permite actualizar el estado a un valor diferente y desencadenar un nuevo renderizado.
