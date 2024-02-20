@@ -47,7 +47,14 @@ export default function AlbumesPage (props) {
         <div className="row">
           {albums.map((album) => (
             <div key={album.id} className="col-3">
-              {album.title}
+              <div className="card">
+              <img src={`https://picsum.photos/200/300?random=${album.id}`}/>
+                <div className="card-body">
+                  <p className="card-text">
+                  {album.title}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
