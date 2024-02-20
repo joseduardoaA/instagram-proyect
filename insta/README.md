@@ -71,3 +71,7 @@ https://platzi.com/blog/ciclo-de-vida-de-un-componente-de-reactjs/#:~:text=Ciclo
 useState devuelve un array con exactamente dos valores:
 El estado actual. Durante el primer renderizado, coincidirá con el initialState que hayas pasado.
 La función set que te permite actualizar el estado a un valor diferente y desencadenar un nuevo renderizado.
+
+Colocar esto <img src="https://picsum.photos/200/300?random=2">
+Cambiar el random=2 por el Id
+https://picsum.photos/
