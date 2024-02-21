@@ -2,8 +2,9 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import UserItem from '../components/users/UserItem'
+import AlbumItem from '../components/albums/AlbumItem'
 
-export default function AlbumesPage (props) {
+export default function AlbumesPage () {
   const { userId } = useParams()
   const [user, setUser] = useState(null)
   const [albums, setAlbums] = useState([])
@@ -29,7 +30,6 @@ export default function AlbumesPage (props) {
     <>
       <Navbar />
       <div className="container">
-        <h1>{userId}</h1>
         <div className="row">
           <div className="col-6">
             {user
@@ -46,16 +46,7 @@ export default function AlbumesPage (props) {
         </div>
         <div className="row">
           {albums.map((album) => (
-            <div key={album.id} className="col-3">
-              <div className="card">
-              <img src={`https://picsum.photos/200/300?random=${album.id}`}/>
-                <div className="card-body">
-                  <p className="card-text">
-                  {album.title}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <AlbumItem key={album.id} id={album.id} title={album.title} />
           ))}
         </div>
       </div>

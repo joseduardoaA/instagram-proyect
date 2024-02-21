@@ -75,3 +75,6 @@ La función set que te permite actualizar el estado a un valor diferente y desen
 Colocar esto <img src="https://picsum.photos/200/300?random=2">
 Cambiar el random=2 por el Id
 https://picsum.photos/
+
+Pagina de fotos
+https://jsonplaceholder.typicode.com/photos?albumId=6
