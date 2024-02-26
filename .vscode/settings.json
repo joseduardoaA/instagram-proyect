@@ -1,0 +1,12 @@
+{
+  "cSpell.language": "en, es",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.format": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2
+}
