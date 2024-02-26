@@ -34,7 +34,7 @@ export default function AlbumesPage () {
           <div className="col-6">
             {user
               ? (
-              <UserItem className
+              <UserItem
                 userId={user.id}
                 username={user.username}
                 name={user.name}

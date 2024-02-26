@@ -31,8 +31,8 @@ export default function UserItem (props) {
           />
         </div>
         <div className="col-9">
-          <div className="h3">{props.name}</div>
-          <div className="h4">@{props.username}</div>
+          <div className="h3 mx-5">{props.name}</div>
+          <div className="h4 mx-5">@{props.username}</div>
         </div>
         <div className="my-auto text-end col-2 h5">Ver álbumes</div>
       </div>
