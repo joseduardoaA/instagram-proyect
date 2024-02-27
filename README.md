@@ -7,31 +7,30 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Generar el Front 
+Generar el Front
 Fetch metodo asincrono que trae informacion de un EndPoint
- comand line interface
+comand line interface
 
-SWC Complilacion 
+SWC Complilacion
 
 React -- JavaScript
-npm install -- 
+npm install --
 npm run dev
 
 Punto inicial Package.JSON
 
-
 Dependences -- paquetes de Node para que corra el pryecto
-Dev Dependences -- Paquetes de Node para utilizar al momento de desarrollar 
+Dev Dependences -- Paquetes de Node para utilizar al momento de desarrollar
 
 npm run preview
 
-Ofuscacion -- No se pueda ver el codigo que hiciste 
+Ofuscacion -- No se pueda ver el codigo que hiciste
 
 HTML -- Estructura
 CSS -- Estilos
 JavaScript -- Interactividad
 
-ESLint -- Verifica el codigo para ver si esta escrito de acuerdo a las reglas que tu definiste 
+ESLint -- Verifica el codigo para ver si esta escrito de acuerdo a las reglas que tu definiste
 npx eslint --init
 Tercera Opcion
 JavaScript (import/export)
@@ -39,13 +38,12 @@ React
 Browser
 Standar
 JSON
-Gestor npm 
+Gestor npm
 singleQuote true
-Directorio .vscode 
+Directorio .vscode
 Archivo settings.json
 
-
-npm react router dom 
+npm react router dom
 Para agregar archivos con funcionalidades
 <BrowserRouter>
 Agregarlo al App.jsx
@@ -78,3 +76,9 @@ https://picsum.photos/
 
 Pagina de fotos
 https://jsonplaceholder.typicode.com/photos?albumId=6
+
+Flex CSS
+https://developer.mozilla.org/es/docs/Web/CSS/flex
+
+Flex Bootstrap
+https://getbootstrap.com/docs/5.3/utilities/flex/

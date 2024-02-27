@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import UserItem from '../components/users/UserItem'
 import AlbumItem from '../components/albums/AlbumItem'
 
-export default function AlbumesPage () {
+export default function AlbumesPage() {
   const { userId } = useParams()
   const [user, setUser] = useState(null)
   const [albums, setAlbums] = useState([])
@@ -32,16 +32,14 @@ export default function AlbumesPage () {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            {user
-              ? (
+            {user ? (
               <UserItem
                 userId={user.id}
                 username={user.username}
                 name={user.name}
                 email={user.email}
               />
-                )
-              : null}
+            ) : null}
           </div>
         </div>
         <div className="row">

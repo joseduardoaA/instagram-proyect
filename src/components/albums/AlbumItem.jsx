@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function AlbumItem (props) {
+export default function AlbumItem(props) {
   const navigate = useNavigate()
 
   const [isHover, setIsHover] = useState(false)
